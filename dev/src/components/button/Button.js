@@ -1,16 +1,13 @@
 import React from "react";
 import { Icon } from "./Icon";
-const button ={
-    display:"flex"
-}
+
 export const Button = ()=>{
     
     return(
-        <>
+        <div>
             <button>
                 <Icon icon="oi"/>
-                <Icon icon="oi"/>
             </button>
-        </>
+        </div>
     )
 }
