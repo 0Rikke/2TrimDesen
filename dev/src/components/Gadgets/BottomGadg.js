@@ -11,7 +11,7 @@ export const BottomGadg = ()=>{
             
             {/* buscar nas conf do user e fazer um foreach aqui pra cada gadget */}
             <Gadget/>
-            <Gadget/>
+          
             
             <Conf/>
         </div>

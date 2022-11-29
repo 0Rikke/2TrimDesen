@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect,React, useState } from "react";
 import { Button } from "../button/Button";
 const style ={
     display:"flex",
@@ -14,24 +14,35 @@ const style ={
 }
 export const Toolbar = ()=>{
 
-    const func = ()=>{ window.alert('oi')}
+    const [categories,setCategories] = useState({});
+
+    useEffect(()=>{
+        const load = async()=>{
+
+            const consulta = await fetch('http://127.0.0.1:8000/api/categories/18')
+            const resposta = await consulta.json();
+            const obj = resposta[0];
+            // const obj = JSON.parse(resposta)
+            setCategories(obj);
+            console.log(obj)
+
+        }
+        load()
+    },[])
+
+
 
     return(
         <div>
             <div style={style}>
-
-        {/* 
-    fazer a função map com o que tiver setado
-    ou seja tem que fazer um hook também e armazenar 
-    no toobal o status lá dos icones armazenados                
-        */}
-            <Button onClick={func}/>
-            <Button onClick={func}/>
-            <Button onClick={func}/>
-            <Button onClick={func}/>
-            <Button onClick={func}/>
-
-
+                {
+                    Object.keys(categories).map((item) => {
+                        categories[item] > 0 && <Button key={item}name={item} onClick={()=>{ window.alert("recheio di murangu")}}/> 
+                        if(categories[item]>0){
+                            return <Button key={item}name={item} onClick={()=>{ window.alert("recheio di murangu")}}/>
+                        }
+                    })
+                }
             </div>
         </div>
         

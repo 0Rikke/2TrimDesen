@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Gadget = ()=>{
-    return <div>teste, </div>
+    return <div>isso é onde vai o gadget </div>
         // fazer o gadget depois
     
 }

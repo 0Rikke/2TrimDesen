@@ -2,7 +2,7 @@ import React from 'react';
 import { Task } from './Task';
 
 const side ={
-    // display:"flex",
+    //display:"flex",
     border:"solid 1px black",
     margin:"10px",
     width:"380px",

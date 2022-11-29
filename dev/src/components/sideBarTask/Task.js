@@ -12,12 +12,12 @@ export const Task =({taskName,taskColor})=>{
        
     }
 
-    const star ={
-        // position:"relative",
-        // overflow:"hidden",
-        // bottom:"0px",
-        // right:"0px"
-    }
+    // const star ={
+    //     // position:"relative",
+    //     // overflow:"hidden",
+    //     // bottom:"0px",
+    //     // right:"0px"
+    // }
     return(
         <div>
             <div style={task}>
