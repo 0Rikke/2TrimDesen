@@ -6,7 +6,8 @@ const workarea ={
     margin:"10px",
     alignItens:"center",
     justifyContent:"center",
-    padding:"25vh",
+    padding:"190px",
+    width:"500px"
     
 }
 export const Workarea = ()=>{
