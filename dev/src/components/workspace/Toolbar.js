@@ -3,7 +3,7 @@ import { Button } from "../button/Button";
 const style ={
     display:"flex",
     border:"solid 1px black",
-     padding:" 3vh 0px",
+    padding:"3vh",
     overflow:"hidden",
     margin:"10px",
     textAlign:"center",
@@ -19,6 +19,7 @@ export const Toolbar = ()=>{
     return(
         <div>
             <div style={style}>
+
         {/* 
     fazer a função map com o que tiver setado
     ou seja tem que fazer um hook também e armazenar 
@@ -29,6 +30,8 @@ export const Toolbar = ()=>{
             <Button onClick={func}/>
             <Button onClick={func}/>
             <Button onClick={func}/>
+
+
             </div>
         </div>
         
