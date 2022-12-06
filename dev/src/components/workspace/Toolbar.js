@@ -1,50 +1,36 @@
-import { useEffect,React, useState } from "react";
+import React from "react";
+// import { useEffect } from "react";
+// import { useState } from "react";
 import { Button } from "../button/Button";
+
+
 const style ={
     display:"flex",
-    border:"solid 1px black",
-    padding:"3vh",
+    padding:"1vw",
     overflow:"hidden",
-    margin:"10px",
-    textAlign:"center",
-    justifyContent:"center",
-    float:"left",
-    width:"880px"
-
+    width:"68vw",
+    backgroundColor:"#111",
+    color:"white",
+    marginTop:"15px",
+    borderBottomLeftRadius:"7px",
+    borderBottomRightRadius:"7px"
 }
-export const Toolbar = ()=>{
 
-    const [categories,setCategories] = useState({});
+export const Toolbar = ({categories})=> {
 
-    useEffect(()=>{
-        const load = async()=>{
-
-            const consulta = await fetch('http://127.0.0.1:8000/api/categories/18')
-            const resposta = await consulta.json();
-            const obj = resposta[0];
-            // const obj = JSON.parse(resposta)
-            setCategories(obj);
-            console.log(obj)
-
-        }
-        load()
-    },[])
-
-
-
-    return(
+    const func = ()=>{ window.alert("recheio di murangu")};
+    
+    return (
         <div>
-            <div style={style}>
-                {
-                    Object.keys(categories).map((item) => {
-                        categories[item] > 0 && <Button key={item}name={item} onClick={()=>{ window.alert("recheio di murangu")}}/> 
-                        if(categories[item]>0){
-                            return <Button key={item}name={item} onClick={()=>{ window.alert("recheio di murangu")}}/>
-                        }
-                    })
-                }
-            </div>
+            <div style={style}>          
+            {
+                Object.keys(categories).map((key) =>{
+                        if(categories[key] > 0){
+                         return <Button key={key}name={key} onClick={func}/>
+                        }                  
+                })
+            }
+          </div>
         </div>
-        
     )
 }

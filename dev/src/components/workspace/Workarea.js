@@ -1,14 +1,12 @@
 import React from "react";
 
 const workarea ={
-    // float:"right",
-    border:"solid 1px black",
-    display:"flex",
-    margin:"10px",
-    alignItens:"center",
-    justifyContent:"center",
-    padding:"190px",
-    width:"500px"
+    //float:"right",
+    marginTop:"15px",
+    width:"70vw",
+    backgroundColor:"#555",
+    color:"white",
+    height:"50vh"
     
 }
 export const Workarea = ()=>{

@@ -11,10 +11,10 @@ export const Button = ({onClick, name})=>{
 
     
     return(
-        <div style={buttonDIv} >
-            <button onClick ={onClick}style={button}>
+        
+            <button onClick={onClick}style={button}>
                 <Icon icon={name}/>
             </button>
-        </div>
+
     )
 }

@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.main{
+    margin: 15px;
+    display:flex;
+    overflow: hidden;
+    flex-grow: 1;
+
+}
