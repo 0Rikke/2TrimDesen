@@ -19,7 +19,7 @@ export const NavBar = ()=>{
     useEffect(()=>{
         const load = async()=>{
 
-            const consulta = await fetch('http://127.0.0.1:8000/api/categories/17')
+            const consulta = await fetch('http://127.0.0.1:8000/api/categories/19')
             const resposta = await consulta.json();
            
             const obj = resposta[0];

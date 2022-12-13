@@ -18,7 +18,7 @@ const style ={
 
 export const Toolbar = ({categories})=> {
 
-    const func = ()=>{ window.alert("recheio di murangu")};
+    const func = ()=>{ window.alert("tarefas da categoria")};
     
     return (
         <div>

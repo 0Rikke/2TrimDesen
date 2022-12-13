@@ -13,7 +13,7 @@ export const Workarea = ()=>{
     return(
         <div>
             <div style={workarea}>
-                Work Area
+               
             </div>
             
         </div>

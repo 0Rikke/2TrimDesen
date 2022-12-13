@@ -38,10 +38,7 @@ export const SideBarTask = ()=>{
                         
                 })
             }
-            </div>
-            
-               
-            
+            </div>       
         </div>
         
     )

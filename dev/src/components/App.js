@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
+import React, {  } from 'react';
 import { Workspace } from './workspace/Workspace';
 import { SideBarTask } from './sideBarTask/sideBarTask';
 import {NavBar} from './Nav/NavBar';
-import { BottomGadg } from './Gadgets/BottomGadg';
-import Context from './Context';
+
+
 import "./app.css";
 export default function App() {
-  const [select, setSelect] = useState(false);
+
 
   return (
-    <Context.Provider value={[select, setSelect]}>
+    <div>
         <NavBar/>
         <div className='main'> 
             <div>
@@ -20,9 +20,7 @@ export default function App() {
               <Workspace/>
             </div>  
         </div>
+      </div>
 
-    <BottomGadg/>
-        
-    </Context.Provider>
   );
 }

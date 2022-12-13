@@ -1,9 +1,9 @@
 import React from "react";
 import { Icon } from "./Icon";
 
-const buttonDIv ={
-    marginLeft:"10px",
-}
+// const buttonDIv ={
+//     marginLeft:"10px",
+// }
 const button={
     width:"95px"
 }

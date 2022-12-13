@@ -15,10 +15,10 @@ export const Workspace = ()=>{
     useEffect(()=>{
         const load = async()=>{
 
-            const consulta = await fetch('http://127.0.0.1:8000/api/categories/16')
+            const consulta = await fetch('http://127.0.0.1:8000/api/categories/19')
             const resposta = await consulta.json();
            // console.log(resposta)
-            const obj = resposta[1];
+            const obj = resposta[0];
             // const obj = JSON.parse(resposta)
             // console.log(obj)
             setCategories(obj);
